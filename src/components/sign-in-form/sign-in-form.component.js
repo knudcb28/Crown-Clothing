@@ -30,7 +30,8 @@ const SignInForm = () => {
       await signInWithGooglePopup();
     } catch (err) {
       if (err instanceof FirebaseError) {
-        this.FirebaseError = 'Error - ' + errorMessage;
+        alert('Unable to access Firebase, please see administrator')
+        // this.FirebaseError = 'Error - ' + errorMessage;
       } else {
         this.errorMessage = 'Error - Generic Error'
       }
