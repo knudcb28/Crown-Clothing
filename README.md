@@ -5,13 +5,13 @@ Crown Clothing an e-commerce app that uses React.js and Google Firebase for auth
 
 ## Installation
 
-Clone this project
+Clone this project.
 
 ```bash
 git clone https://github.com/knudcb28/Crown-Clothing.git
 ```
 
-Use `npm` to install dependencies
+Use `npm` to install dependencies.
 
 ```bash
 npm install 
