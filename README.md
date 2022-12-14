@@ -11,7 +11,7 @@ Clone this project
 git clone https://github.com/knudcb28/Crown-Clothing.git
 ```
 
-Use `npm` to install dependencies.
+Use `npm` to install dependencies
 
 ```bash
 npm install 
