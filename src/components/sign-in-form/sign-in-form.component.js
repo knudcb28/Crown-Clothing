@@ -24,11 +24,11 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
+    
     try {
       await signInWithGooglePopup();
     } catch (error) {
-      console.error(error);
-      return error;
+      alert('error')
     }
   }; 
 
