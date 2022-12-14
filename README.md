@@ -1,7 +1,7 @@
 
 # Crown Clothing
 
-Crown Clothing a functional e-commerce react app that uses Google Firebase for authentication. 
+Crown Clothing an e-commerce app that uses React.js and Google Firebase for authentication. 
 
 ## Installation
 
