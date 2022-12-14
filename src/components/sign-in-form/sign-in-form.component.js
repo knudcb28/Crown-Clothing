@@ -9,6 +9,7 @@ import {
 } from '../../utils/firebase/firebase.utils';
 
 import { ButtonsContainer, SignUpContainer } from './sign-in-form.styles';
+import { FirebaseError } from 'firebase/app';
 
 const defaultFormFields = {
   email: '',
@@ -24,11 +25,15 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    
+
     try {
       await signInWithGooglePopup();
-    } catch (error) {
-      alert('error')
+    } catch (err) {
+      if (err instanceof FirebaseError) {
+        this.FirebaseError = 'Error - ' + errorMessage;
+      } else {
+        this.errorMessage = 'Error - Generic Error'
+      }
     }
   }; 
 
