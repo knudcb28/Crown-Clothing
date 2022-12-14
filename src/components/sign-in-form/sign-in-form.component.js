@@ -31,12 +31,8 @@ const SignInForm = () => {
     } catch (err) {
       if (err instanceof FirebaseError) {
         alert('Unable to access Firebase, please see administrator')
-      }}
-        // this.FirebaseError = 'Error - ' + errorMessage;
-      // } else {
-      //   this.errorMessage = 'Error - Generic Error'
-      // }
-    //}
+      }
+    }
   }; 
 
   const handleSubmit = async (event) => {
