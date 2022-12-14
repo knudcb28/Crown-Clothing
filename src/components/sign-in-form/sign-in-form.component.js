@@ -24,8 +24,11 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    await signInWithGooglePopup();
-  };
+    if (Response.error) {
+      alert ('error')
+    } else {
+      await signInWithGooglePopup();
+  }}; 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
